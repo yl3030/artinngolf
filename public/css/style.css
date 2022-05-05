@@ -151,6 +151,7 @@ input, button {
   right: -100%;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  z-index: 1000;
 }
 
 .header_nav-m_list {
@@ -413,6 +414,13 @@ input, button {
   .page-banner {
     margin-bottom: 50px;
   }
+  .gototop {
+    width: 60px;
+    height: 60px;
+    font-size: 22px;
+    right: 20px;
+    bottom: 30px;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -605,6 +613,8 @@ input, button {
   background-color: #000;
   top: 0;
   left: 0;
+  z-index: 1000;
+  overflow-y: auto;
 }
 
 .product_detail_pic.larger .product-big {
@@ -629,7 +639,7 @@ input, button {
   display: block;
   position: absolute;
   top: 15px;
-  right: 15px;
+  right: 25px;
 }
 
 .product_detail .product-big_cross {

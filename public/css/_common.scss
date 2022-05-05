@@ -118,6 +118,7 @@ input,button {
             padding: 40px;
             right: -100%;
             transition: 0.3s;
+            z-index: 1000;
             &_list {
                 margin: 40px 0;
                 li {
@@ -367,6 +368,13 @@ input,button {
     }
     .page-banner {
         margin-bottom: 50px;
+    }
+    .gototop {
+        width: 60px;
+        height: 60px;
+        font-size: 22px;
+        right: 20px;
+        bottom: 30px;
     }
 }
 
