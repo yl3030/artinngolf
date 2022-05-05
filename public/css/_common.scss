@@ -1,0 +1,390 @@
+$main-color: #000;
+
+body {
+    color: #000;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: $main-color;
+    &:hover {
+        text-decoration: none;
+        color: $main-color;
+    }
+}
+
+input,button {
+    outline: none;
+    background-color: transparent;
+    color: #000;
+    border: 0;
+}
+
+.pic-cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
+
+.header {
+    background-color: $main-color;
+    // padding: 20px 0;
+    height: 125px;
+    &_logo {
+        width: 300px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        // padding: 20px 0;
+        // display: block;
+        img {
+            width: 100%;
+        }
+    }   
+    &_lang {
+        margin-bottom: 20px;
+        img {
+            width: 20px;
+            margin-right: 5px;
+        }
+        span {
+            color: #fff;
+        }
+    }
+    &_right {
+        width: 300px;
+        padding-bottom: 20px;
+    }
+    &_search {
+        width: 100%;
+        border-radius: 100px;
+        background-color: #fff;
+        height: 40px;
+        input {
+            width: calc(100% - 60px);
+            padding: 5px 15px;
+            &::placeholder {
+                color: $main-color;
+            }
+        }
+        button {
+            width: 60px;
+            height: 100%;
+            padding: 0;
+            img {
+                width: 40%;
+            }
+        }
+    }
+    &_nav {
+        width: calc(100% - 600px);
+        li {
+            margin: 0 10px;
+            a {
+                display: block;
+                color: #fff;
+                padding: 20px 15px;
+                &.active {
+                    position: relative;
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        width: 100%;
+                        height: 3px;
+                        background-color: #fff;
+                        bottom: 10px;
+                        left: 0;
+                    }
+                }
+            }
+        }
+        &-m {
+            position: fixed;
+            height: 100vh;
+            background-color: $main-color;
+            max-width: 400px;
+            width: 100%;
+            top: 0;
+            right: 0;
+            padding: 40px;
+            right: -100%;
+            transition: 0.3s;
+            &_list {
+                margin: 40px 0;
+                li {
+                    margin-bottom: 10px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+            &.active {
+                right: 0;
+            }
+        }
+    }
+    &_menu {
+        width: 20px;
+        height: 15px;
+        position: relative;
+        cursor: pointer;
+        .bar {
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background-color: #fff;
+            &-top {
+                top: 0;
+                left: 0;
+            }
+            &-middle {
+                top: 50%;
+                left: 0;
+                // transform: translateY(-50%);
+            }
+            &-bottom {
+                bottom: 0;
+            }
+        }
+        &_cross {
+            // width: 20px;
+            // height: 20px;
+            // position: relative;
+            // margin-bottom: 30px;
+            // margin-left: auto;
+            // cursor: pointer;
+            // .bar {
+            //     position: absolute;
+            //     width: 100%;
+            //     height: 1px;
+            //     background-color: #fff;
+            //     top: 50%;
+            //     left: 50%;
+            //     &-1 {
+            //         transform: translate(-50%,-50%) rotate(45deg) ;
+            //     }
+            //     &-2 {
+            //         transform: translate(-50%,-50%) rotate(-45deg) ;
+            //     }
+            // }
+        }
+    }
+}
+
+.menu_cross {
+    width: 20px;
+            height: 20px;
+            position: relative;
+            margin-bottom: 30px;
+            margin-left: auto;
+            cursor: pointer;
+            .bar {
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                background-color: #fff;
+                top: 50%;
+                left: 50%;
+                &-1 {
+                    transform: translate(-50%,-50%) rotate(45deg) ;
+                }
+                &-2 {
+                    transform: translate(-50%,-50%) rotate(-45deg) ;
+                }
+            }
+}
+
+.footer {
+    background-color: $main-color;
+    padding: 40px 20px;
+    color: #fff;
+    h5 {
+        font-size: 28px;
+        font-weight: 600;
+        margin: 0 0 20px;
+    }
+    &_social {
+        margin-bottom: 20px;
+        a {
+            display: block;
+            width: 35px;
+            margin: 0 6px;
+        }
+    }
+}
+
+.page-banner {
+    position: relative;
+    margin-bottom: 100px;
+    .swiper-slide {
+        width: 100%;
+        padding-bottom: 381%;
+        position: relative;
+        background-color: $main-color;
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            object-fit: contain;
+        }
+    }
+    .banner-style {
+        position: absolute;
+        width: 100%;
+        bottom: -1px;
+        left: 0;
+        z-index: 100;
+    }
+}
+
+.gototop {
+    width: 100px;
+    height: 100px;
+    border: 1px solid $main-color;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 700;
+    position: fixed;
+    background-color: #fff;
+    bottom: 100px;
+    right: 35px;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0 auto 40px;
+    position: relative;
+    width: fit-content;
+    letter-spacing: 0.05em;
+    &::after {
+        position: absolute;
+        width: 100%;
+        content: "";
+        height: 2px;
+        background-color: $main-color;
+        bottom: -13px;
+        left: 0;
+    }
+    &-second {
+        width: fit-content;
+        font-size: 40px;
+        margin: 0 auto 40px;
+        position: relative;
+        letter-spacing: 0.05em;
+        &::after {
+            position: absolute;
+            width: 100%;
+            content: "";
+            height: 2px;
+            background-color: $main-color;
+            bottom: -13px;
+            left: 0;
+        }
+    }
+}
+
+.page-text {
+    font-size: 17px;
+    .highlight {
+        color: #FF0000;
+        font-weight: 700;
+    }
+    .big {
+        font-size: 28px;
+        font-weight: 700;
+    }
+}
+
+.mb-100 { margin-bottom: 100px; }
+
+.w-1000 {
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width:1200px) {
+    .header {
+        &_logo {
+            width: 200px;
+        }
+        &_right {
+            width: 200px;
+        }
+        &_nav {
+            width: calc(100% - 400px);
+        }
+    }
+}
+
+@media screen and (max-width:991px) {
+    .header {
+        height: 70px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .page-title {
+        font-size: 40px;
+        &-second {
+            font-size: 30px;
+        }
+    }
+}
+
+@media screen and (max-width:575px) {
+    .footer {
+        padding: 30px 20px;
+        h5 {
+            font-size: 20px;
+        }
+        &_copyright {
+            font-size: 14px;
+        }
+    }
+    .page-banner {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .page-title {
+        font-size: 30px;
+        &-second {
+            font-size: 22px;
+        }
+    }
+}
+
+@media screen and (max-width:414px) {
+    .header {
+        &_nav {
+            &-m {
+                padding: 30px 20px;
+            }
+        }
+    }
+}
