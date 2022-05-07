@@ -2,6 +2,7 @@ $main-color: #000;
 
 body {
     color: #000;
+    background-color: #000;
 }
 
 ul {
@@ -26,6 +27,10 @@ input,button {
     border: 0;
 }
 
+main {
+    background-color: #fff;
+}
+
 .pic-cover {
     position: absolute;
     width: 100%;
@@ -37,21 +42,19 @@ input,button {
 
 .header {
     background-color: $main-color;
-    // padding: 20px 0;
     height: 125px;
     &_logo {
         width: 300px;
         height: 100%;
         display: flex;
         align-items: center;
-        // padding: 20px 0;
-        // display: block;
         img {
-            width: 100%;
+            width: 180px
         }
     }   
     &_lang {
         margin-bottom: 20px;
+        margin-top: 20px;
         img {
             width: 20px;
             margin-right: 5px;
@@ -69,6 +72,7 @@ input,button {
         border-radius: 100px;
         background-color: #fff;
         height: 40px;
+        // margin-bottom: 40px;
         input {
             width: calc(100% - 60px);
             padding: 5px 15px;
@@ -120,14 +124,57 @@ input,button {
             transition: 0.3s;
             z-index: 1000;
             &_list {
-                margin: 40px 0;
-                li {
+                // padding: 40px 0;
+                height: calc(100% - 90px - 64px);
+                overflow-y: auto;
+                >li {
                     margin-bottom: 10px;
                     &:last-child {
                         margin-bottom: 0;
                     }
                     a {
                         color: #fff;
+                        display: block;
+                        width: 100%;
+                    }
+                }
+                &_dropdown {
+                    display: flex !important;
+                    align-items: center;
+                    justify-content: space-between;
+                    i {
+                        font-size: 16px;
+                        color: #fff;
+                        transition: 0.3s;
+                    }
+                    &.drop {
+                        i {
+                            transform: rotate(90deg);
+                        }
+                    }
+                }
+                small {
+                    width: 20px;
+                    text-align: right;
+                    display: inline-block;
+                }
+                &-second {
+                    margin-top: 10px;
+                    padding-left: 20px;
+                    margin-bottom: 30px;
+                    display: none;
+                    h5 {
+                        color: #fff;
+                        font-size: 17px;
+                        margin-bottom: 3px;
+                    }
+                }
+                &-third {
+                    li {
+                        a {
+                            font-weight: 300;
+                            color: rgba(255, 255, 255, 0.8);
+                        }
                     }
                 }
             }
@@ -228,7 +275,7 @@ input,button {
 
 .page-banner {
     position: relative;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     .swiper-slide {
         width: 100%;
         padding-bottom: 38%;
@@ -246,7 +293,7 @@ input,button {
     .banner-style {
         position: absolute;
         width: 100%;
-        bottom: -1px;
+        bottom: -10%;
         left: 0;
         z-index: 100;
     }
@@ -292,6 +339,7 @@ input,button {
         font-size: 40px;
         margin: 0 auto 40px;
         position: relative;
+        text-align: center;
         letter-spacing: 0.05em;
         &::after {
             position: absolute;
@@ -308,21 +356,28 @@ input,button {
 .page-text {
     font-size: 17px;
     .highlight {
-        color: #FF0000;
+        // color: #FF0000;
+        color: #1a0dab;
         font-weight: 700;
+        text-decoration: underline;
     }
     .big {
         font-size: 28px;
         font-weight: 700;
     }
+    br {
+        display: none;
+    }
 }
 
 .mb-100 { margin-bottom: 100px; }
+.pb-100 { padding-bottom: 100px; }
 
 .w-1000 {
     width: 100%;
     max-width: 1000px;
-    padding: 0 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -344,6 +399,14 @@ input,button {
 @media screen and (max-width:991px) {
     .header {
         height: 70px;
+        &_logo {
+            img {
+                width: 90px;
+            }
+        }
+        &_search {
+            margin-bottom: 40px;
+        }
     }
 }
 
@@ -383,6 +446,11 @@ input,button {
         font-size: 30px;
         &-second {
             font-size: 22px;
+        }
+    }
+    .page-text {
+        br {
+            display: block;
         }
     }
 }

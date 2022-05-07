@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="./public/css/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./public/css/style.css">
+    <script src="https://kit.fontawesome.com/69fd600045.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header">
@@ -46,9 +47,64 @@
                     <button><img src="./public/img/icon_search.svg" alt=""></button>
                 </form>
                 <ul class="header_nav-m_list">
-                    <li><a class="active" href="./index.html">首頁</a></li>
-                    <li><a href="./about.html">關於我們</a></li>
-                    <li><a href="./product.html">產品介紹</a></li>
+                    <li><a href="./index.html">首頁</a></li>
+                    <li><a class="active" href="./about.html">關於我們</a></li>
+                    <li>
+                        <a class="header_nav-m_list_dropdown">
+                            <span>產品介紹</span>
+                            <i class="fas fa-angle-right"></i>
+                        </a>
+                        <ul class="header_nav-m_list-second">
+                            <li>
+                                <h5><small class="me-2">>></small>全部商品</h5>
+                                <ul class="header_nav-m_list-third">
+                                    <li><a href=""><small class="me-2">-</small>球袋</a></li>
+                                    <li><a href=""><small class="me-2">-</small>衣物袋</a></li>
+                                    <li><a href=""><small class="me-2">-</small>其他配件</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5><small class="me-2">>></small>ARTINN</h5>
+                                <ul class="header_nav-m_list-third">
+                                    <li><a href=""><small class="me-2">-</small>球袋</a></li>
+                                    <li><a href=""><small class="me-2">-</small>衣物袋</a></li>
+                                    <li><a href=""><small class="me-2">-</small>其他配件</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5><small class="me-2">>></small>G.Winner</h5>
+                                <ul class="header_nav-m_list-third">
+                                    <li><a href=""><small class="me-2">-</small>球袋</a></li>
+                                    <li><a href=""><small class="me-2">-</small>衣物袋</a></li>
+                                    <li><a href=""><small class="me-2">-</small>其他配件</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5><small class="me-2">>></small>HORUS</h5>
+                                <ul class="header_nav-m_list-third">
+                                    <li><a href=""><small class="me-2">-</small>球袋</a></li>
+                                    <li><a href=""><small class="me-2">-</small>衣物袋</a></li>
+                                    <li><a href=""><small class="me-2">-</small>其他配件</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5><small class="me-2">>></small>GolfSweety</h5>
+                                <ul class="header_nav-m_list-third">
+                                    <li><a href=""><small class="me-2">-</small>球袋</a></li>
+                                    <li><a href=""><small class="me-2">-</small>衣物袋</a></li>
+                                    <li><a href=""><small class="me-2">-</small>其他配件</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5><small class="me-2">>></small>Booost</h5>
+                                <ul class="header_nav-m_list-third">
+                                    <li><a href=""><small class="me-2">-</small>球袋</a></li>
+                                    <li><a href=""><small class="me-2">-</small>衣物袋</a></li>
+                                    <li><a href=""><small class="me-2">-</small>其他配件</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
                     <li><a href="./service.html">客製化服務</a></li>
                 </ul>
                 <a href="" class="header_lang d-flex align-items-center">
@@ -59,56 +115,62 @@
         </div>
     </header>
 
-    <div class="swiper-container page-banner">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="./public/img/about-banner-1.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="./public/img/about-banner-2.jpg" alt=""></div>
-        </div>     
-        <img class="banner-style" src="./public/img/banner-style.png" alt="">
-        <!-- <div class="swiper-button-next"></div> -->
-        <!-- <div class="swiper-button-prev"></div> -->
-        <!-- <div class="swiper-pagination"></div> -->
-    </div>
-
-    <div class="container mb-100 w-1000">
-        <h1 class="page-title">About Us/關於我們</h1>
-        <p class="page-text">ARTINN Golf Design 品牌創立於 2011年，是以高爾夫時尚風格潮流的設計想法，打造出適合亞洲球友的高球配件產品，我們致力於將高爾夫專業機能與精品潮流結合，提供高質感、多元、高機能的高爾夫配件選擇。</p>
-        <div class="about_pic mt-5">
-            <div class="about_pic_content">
-                <img class="pic-cover" src="./public/img/about_pic.png" alt="">
+    <main>
+        <div class="swiper-container page-banner">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./public/img/about-banner-1.jpg" alt=""></div>
+              <!-- <div class="swiper-slide"><img src="./public/img/about-banner-2.jpg" alt=""></div> -->
+            </div>     
+            <img class="banner-style" src="./public/img/banner-style.png" alt="">
+            <!-- <div class="swiper-button-next"></div> -->
+            <!-- <div class="swiper-button-prev"></div> -->
+            <!-- <div class="swiper-pagination"></div> -->
+        </div>
+    
+        <div class="container pb-100 w-1000">
+            <h1 class="page-title">About Us/關於我們</h1>
+            <p class="page-text">ARTINN Golf Design 品牌創立於 2011年，是以高爾夫時尚風格潮流的設計想法，打造出適合亞洲球友的高球配件產品，我們致力於將高爾夫專業機能與精品潮流結合，提供高質感、多元、高機能的高爾夫配件選擇。</p>
+            <div class="about_pic mt-5">
+                <div class="about_pic_content">
+                    <img class="pic-cover" src="./public/img/about-banner-2.jpg" alt="">
+                </div>
+            </div>
+            <h2 class="page-title-second">值得信賴的高爾夫配件品牌</h2>
+            <p class="page-text mb-5">
+                我們對於產品品質及售後服務一直是ARTINN Golf Design的信念與努力方向，唯有優秀的產品設計及品質，透過良好的口碑，成為ARTINN Golf Design旗下各個品牌的優良的成長基石。
+                <br><br>
+                匠人創新有限公司的目標是將高爾夫配件打造成一種藝術表現，以創造今天市面上最優質的產品。
+                <br><br>
+                秉持著高品質高機能的堅持，更結合時尚趨勢，為不同高爾夫客群設計產品，成為台灣最大的高爾夫配件品牌公司，目前ARTINN Golf Design旗下六大子品牌包括：ARTINN 、G.Winner、Golf Sweety、HORUS、Booost等。
+            </p>
+            <h2 class="page-title-second">匠人創新六大品牌</h2>
+            <div class="about-brand d-flex flex-wrap align-items-center justify-content-center mb-5">
+                <img src="./public/img/brand-1.svg" alt="">
+                <img src="./public/img/brand-2.svg" alt="">
+                <img src="./public/img/brand-3.svg" alt="">
+                <img src="./public/img/brand-4.svg" alt="">
+                <img src="./public/img/brand-5.svg" alt="">
+                <img src="./public/img/brand-6.svg" alt="">
+            </div>
+            <h2 class="page-title-second">完整的銷售通路</h2>
+            <p class="page-text mb-5">
+                ARTINN Golf Design品牌已經在台灣、日本等多地上市，台灣市場並與 “邁達康高爾夫”、”SUPER GOLF”、”頂暢Kissco”、”高仕高爾夫”等 120家台灣市場經銷商合作販售，涵蓋百貨通路、OUTLET、實體店面、球場、練習場，提供最全面及完整的銷售服務。
+                <br><br>
+                欲了解您附近的銷售據點，請您加入 ARTINN 官方LINE，按這個網址直接加入Line好友圈詢問販售店家資訊：<a href="https://lin.ee/kxuNNDE" class="highlight">https://lin.ee/kxuNNDE</a>
+                <br><br>
+                LINE專屬ID : <a class="highlight big" href="https://lin.ee/kxuNNDE">@artinngolf </a>
+            </p>
+        
+            <div class="about-qr">
+                <img class="about-qr_pic" src="./public/img/qrcode.png" alt="">
+                <div class="about-qr_intro">手機掃描QR CORD加入ARTINN官方 LINE@</div>
+                <p class="page-text">或致電客戶服務電話: <br><span class="big">02-2696-3353</span> 洽詢。</p>
             </div>
         </div>
-        <h2 class="page-title-second">值得信賴的高爾夫配件品牌</h2>
-        <p class="page-text mb-5">
-            我們對於產品品質及售後服務一直是ARTINN Golf Design的信念與努力方向，唯有優秀的產品設計及品質，透過良好的口碑，成為ARTINN Golf Design旗下各個品牌的優良的成長基石。
-            <br><br>
-            匠人創新有限公司的目標是將高爾夫配件打造成一種藝術表現，以創造今天市面上最優質的產品。
-            <br><br>
-            秉持著高品質高機能的堅持，更結合時尚趨勢，為不同高爾夫客群設計產品，成為台灣最大的高爾夫配件品牌公司，目前ARTINN Golf Design旗下六大子品牌包括：ARTINN 、G.Winner、Golf Sweety、HORUS、Booost等。
-        </p>
-        <h2 class="page-title-second">匠人創新六大品牌</h2>
-        <div class="about-brand d-flex flex-wrap align-items-center justify-content-center mb-5">
-            <img src="./public/img/brand-1.svg" alt="">
-            <img src="./public/img/brand-2.svg" alt="">
-            <img src="./public/img/brand-3.svg" alt="">
-            <img src="./public/img/brand-4.svg" alt="">
-            <img src="./public/img/brand-5.svg" alt="">
-        </div>
-        <h2 class="page-title-second">完整的銷售通路</h2>
-        <p class="page-text mb-5">
-            ARTINN Golf Design品牌已經在台灣、日本等多地上市，台灣市場並與 “邁達康高爾夫”、”SUPER GOLF”、”頂暢Kissco”、”高仕高爾夫”等 120家台灣市場經銷商合作販售，涵蓋百貨通路、OUTLET、實體店面、球場、練習場，提供最全面及完整的銷售服務。
-            <br><br>
-            欲了解您附近的銷售據點，請您加入 ARTINN 官方LINE，按這個網址直接加入Line好友圈詢問販售店家資訊：<a href="https://lin.ee/kxuNNDE" class="highlight">https://lin.ee/kxuNNDE</a>
-            <br><br>
-            LINE專屬ID : <a class="highlight big" href="https://lin.ee/kxuNNDE">@artinngolf </a>
-        </p>
+    </main>
+
     
-        <div class="about-qr">
-            <img class="about-qr_pic" src="./public/img/qrcode.png" alt="">
-            <div class="about-qr_intro">手機掃描QR CORD加入ARTINN官方 LINE@</div>
-            <p class="page-text">或致電客戶服務電話: <span class="big">02-2696-3353</span> 洽詢。</p>
-        </div>
-    </div>
+    
 
     
 
@@ -132,10 +194,11 @@
     <script>
         var swiper = new Swiper(".page-banner", {
             slidesPerView: 1,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
+            allowTouchMove:false,
+            // autoplay: {
+            //     delay: 3000,
+            //     disableOnInteraction: false,
+            // },
             speed: 1500,
             loop:true,
         })

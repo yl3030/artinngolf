@@ -16,9 +16,14 @@ $(".product-class").click(function(){
     $(".product-nav").addClass("active");
 })
 
-$(".image-view").click(function(){
-    $(".product_detail_pic").addClass("larger");
+$(".header_nav-m_list_dropdown").click(function(){
+    $(this).parents("li").find(".header_nav-m_list-second").slideToggle(300);
+    $(this).toggleClass("drop");
 })
-$(".product-big_cross").click(function(){
-    $(".product_detail_pic").removeClass("larger");
-})
+
+// $(".image-view").click(function(){
+//     $(".product_detail_pic").addClass("larger");
+// })
+// $(".product-big_cross").click(function(){
+//     $(".product_detail_pic").removeClass("larger");
+// })
