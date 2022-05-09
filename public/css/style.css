@@ -149,7 +149,6 @@ main {
   position: fixed;
   height: 100vh;
   background-color: #000;
-  max-width: 400px;
   width: 100%;
   top: 0;
   right: 0;
@@ -1073,6 +1072,11 @@ main {
 }
 
 @media screen and (max-width: 767px) {
+  .home-banner .swiper-slide {
+    width: 100%;
+    padding-bottom: 175%;
+    height: 0;
+  }
   .about-brand img {
     margin: 20px;
   }
